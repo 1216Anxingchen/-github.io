@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>班级意见与反馈</title>
+
+</head>
+<body>
+    <br>
+    <br>
+
+<h1 align="center">南泰科21级班级情况反馈</h1>
+
+    <br>
+    <br>
+
+
+
+    <p id="ymd" align="center"></p>
+        <script>
+            var date = new Date()<!--获得日期数据-->
+            var y = date.getFullYear();<!--年-->
+            var m = date.getMonth()+1;<!--月，这里的月份必须要+1才是当前月份-->
+            var d = date.getDate(); <!--日，getDay是获得当前星期几（0-6），getDate是获得当前日期-->
+            document.getElementById("ymd").innerHTML = "当前时间："+y+"-"+m+"-"+d;
+        </script>
+
+    <br>
+    <br>
+
+
+    <p id="xueyuan" align="center">
+        <select >
+            <option value="one">智能制造学院</option>
+            <option value="tow">电子电气工程学院</option>
+            <option value="three">城市建设与设计学院</option>
+            <option value="four">计算机科学与工程学院</option>
+            <option value="four">环境与制药工程学院</option>
+            <option value="four">商学院</option>
+            <option value="four">外国语学院</option>
+        </select>
+    </p>
+    <br>
+    <br>
+
+
+
+    <form action="">
+        <!--        输入结果传送到‘demo-form.php’服务器-->
+        <p id="input" align="center">
+                班 级 名 称: <input type="text" name="请输入班级" value=""><br>
+                <br>
+                <br>
+                <br>
+                班  长 意 见: <input type="text" name="请输入对临时班长的建议" value=""><br>
+                <br>
+                <br>
+                <br>
+                团支书意见: <input type="text" name="请输入对团支书的建议" value=""><br>
+                <br>
+                <br>
+                <br>
+                对班级意见: <input type="text" name="请输入对班级的建议" value=""><br>
+
+                <p id="result" align="center">
+                    <input type="button" value="点击提交">
+                </p>
+
+        </p>
+                <br>
+
+
+
+
+    </form>
+
+
+
+
+</body>
+
+
+
+
+</html>
